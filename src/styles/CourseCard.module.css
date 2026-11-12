@@ -1,0 +1,58 @@
+.card {
+background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden;
+display: flex;
+flex-direction: column;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.bannerWrapper { position: relative; width: 100%; height: 160px;
+background-color: #e2e8f0;
+}
+
+.banner { width: 100%;
+height: 100%; object-fit: cover;
+}
+
+.categoryTag { position: absolute; top: 12px;
+left: 12px;
+background-color: rgba(15, 23, 42, 0.8); color: #ffffff;
+font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 4px;
+text-transform: uppercase;
+}
+
+.content {
+  padding: 20px; display: flex;
+flex-direction: column; flex: 1;
+}
+
+.title {
+font-size: 1.15rem; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;
+}
+
+.instructor {
+font-size: 0.85rem; color: #64748b; margin-bottom: 12px;
+}
+
+.detailsRow { display: flex;
+justify-content: space-between; align-items: center;
+margin-top: auto; padding-top: 16px;
+border-top: 1px solid #f1f5f9; margin-bottom: 16px;
+}
+
+.duration {
+font-size: 0.85rem; color: #475569;
+}
+
+/* Responsive Card behavior */
+@media (max-width: 640px) {
+.content { padding: 16px;
+}
+.bannerWrapper { height: 140px;
+}
+}
+
